@@ -238,6 +238,9 @@ function Library:CreateMain()
 	Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Combat.TextSize = 14.000
 	Combat.TextXAlignment = Enum.TextXAlignment.Left
+	Combat.MouseButton1Click:Connect(function()
+		Combat.Visible = true
+	end)
 
 	UICorner_2.CornerRadius = UDim.new(0, 1)
 	UICorner_2.Parent = Combat
@@ -281,6 +284,9 @@ function Library:CreateMain()
 	Blantant.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Blantant.TextSize = 14.000
 	Blantant.TextXAlignment = Enum.TextXAlignment.Left
+	Blantant.MouseButton1Click:Connect(function()
+		Blantant.Visible = true
+	end)
 
 	UICorner_3.CornerRadius = UDim.new(0, 3)
 	UICorner_3.Parent = Blantant
@@ -324,6 +330,9 @@ function Library:CreateMain()
 	World.TextColor3 = Color3.fromRGB(255, 255, 255)
 	World.TextSize = 14.000
 	World.TextXAlignment = Enum.TextXAlignment.Left
+	World.MouseButton1Click:Connect(function()
+		World.Visible = true
+	end)
 
 	UICorner_4.CornerRadius = UDim.new(0, 3)
 	UICorner_4.Parent = World
@@ -363,6 +372,9 @@ function Library:CreateMain()
 	Uility.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Uility.TextSize = 14.000
 	Uility.TextXAlignment = Enum.TextXAlignment.Left
+	Uility.MouseButton1Click:Connect(function()
+		Uility.Visible = true
+	end)
 
 	UICorner_5.CornerRadius = UDim.new(0, 3)
 	UICorner_5.Parent = Uility
@@ -402,7 +414,10 @@ function Library:CreateMain()
 	Render.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Render.TextSize = 14.000
 	Render.TextXAlignment = Enum.TextXAlignment.Left
-
+	Render.MouseButton1Click:Connect(function()
+		Render.Visible = true
+	end)
+	
 	UICorner_6.CornerRadius = UDim.new(0, 3)
 	UICorner_6.Parent = Render
 
@@ -691,7 +706,7 @@ UIS.InputChanged:Connect(function(input)
 		end
 	end
 end)
-
+return AlSploit
 --[[coroutine.wrap(ZUBHZ_fake_script)()
 local function TOGJYS_fake_script() -- NotificationFrame.LocalScript 
 	local script = Instance.new('LocalScript', NotificationFrame)
@@ -699,3 +714,5 @@ local function TOGJYS_fake_script() -- NotificationFrame.LocalScript
 	
 end
 coroutine.wrap(TOGJYS_fake_script)()--]]
+
+
