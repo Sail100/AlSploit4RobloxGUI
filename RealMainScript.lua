@@ -38,7 +38,7 @@ if isfolder("AlSploit/CustomModules") == false then
 end
 
 function MainLoaded()
-  local customModuleURL = "--not yet--"..game.PlaceId..".lua"
+  local customModuleURL = "https://github.com/Sail100/AlSploit4RobloxGUI/tree/main/CustomMod/"..game.PlaceId..".lua"
   local customModuleScript = game:HttpGet(customModuleURL, true)
   if customModuleScript then
     local success, error = pcall(function()
@@ -55,10 +55,10 @@ end
 
 --[[
 function MainLoaded()
-  if game:HttpGet("-- not yet--/"..game.PlaceId..".lua") then
-  	loadstring(game:HttpGet("-- not yet--"..game.PlaceId..".lua", true))()
+  if game:HttpGet("https://github.com/Sail100/AlSploit4RobloxGUI/tree/main/CustomMod/"..game.PlaceId..".lua") then
+  	loadstring(game:HttpGet("https://github.com/Sail100/AlSploit4RobloxGUI/tree/main/CustomMod/"..game.PlaceId..".lua", true))()
   elseif isfile("AlSploit/CustomModules/"..game.PlaceId..".lua") then
-    loadstring(readfile("-- not yet --"..game.PlaceId..".lua"))()
+    loadstring(readfile("AlSpoit/CustomMod/"..game.PlaceId..".lua"))()
   else
     loadstring(game:HttpGet("unknown"))()
   end
