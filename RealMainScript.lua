@@ -21,6 +21,15 @@ local TeleportString = [[
 
 queueteleport(TeleportString)
 
+local queueteleport2 = queue_on_teleport
+
+local TeleportString2 = [[
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sail100/AlSploit4RobloxGUI/main/ctg.lua", true))
+]]
+
+queueteleport2(TeleportString2)
+
+
 if isfolder("AlSploit") == false then
 	makefolder("AlSploit")
 end
