@@ -98,3 +98,5 @@ if not shared.FuncsConnect then
   	until shared.FuncsConnect
   end)
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sail100/AlSploit4RobloxGUI/main/MainScript.lua", true))()
