@@ -576,7 +576,7 @@ local function upIN(input)
 	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 end
 
-frame.InputBegan:Connect(function(input)
+frame.upIN:Connect(function(input)
 	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 		dragToggle = true
 		dragStart = input.Position
@@ -613,7 +613,7 @@ local function upIN2(input)
 	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 end
 
-frame.InputBegan:Connect(function(input)
+frame.upIN2:Connect(function(input)
 	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 		dragToggle = true
 		dragStart = input.Position
@@ -649,7 +649,7 @@ local function upIN3(input)
 	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 end
 
-frame.InputBegan:Connect(function(input)
+frame.upIN3:Connect(function(input)
 	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 		dragToggle = true
 		dragStart = input.Position
@@ -686,7 +686,7 @@ local function upIN4(input)
 	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 end
 
-frame.InputBegan:Connect(function(input)
+frame.upIN4:Connect(function(input)
 	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 		dragToggle = true
 		dragStart = input.Position
